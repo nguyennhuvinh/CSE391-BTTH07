@@ -61,3 +61,45 @@ Name.addEventListener("change",function(){
     
 })
 //zipCode
+
+function checkZipCode(code){
+    var zipCodeRegex = /^[0-9]+$/
+    return zipCodeRegex.test(code)
+}
+
+zipCode.addEventListener("change",function(){
+    if(checkZipCode(zipCode.value)){
+        zipCodeError.textContent = " "
+    }
+    else{
+        zipCodeError.textContent = "Must be numeric only"
+        zipCodeError.style.color = "red"
+    }
+    
+})
+
+//Email
+function checkEmail(email){
+    var emailRegex = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/; 
+    return emailRegex.test(email)
+}
+
+Email.addEventListener("change",function(){
+    if(checkEmail(Email.value)){
+        emailError.textContent = ""
+    }
+    else{
+        emailError.textContent = "Must be a valid Email"
+        emailError.style.color = "red"
+    }
+    
+})
+
+
+function onlyOne(checkbox) {
+    var checkboxes = document.getElementsByName('check')
+    checkboxes.forEach((item) => {
+        if (item !== checkbox) 
+        item.checked = false
+    })
+}
