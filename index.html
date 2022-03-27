@@ -4,37 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/main.css">
+    <link rel="stylesheet" href="./CSS/style.css">
     <title>Document</title>
 </head>
 <body>
     <form action="" id="form">
         <h1 class="form__tittle">Registration Form</h1>
-        <div class="mt-10 user">
+        <div class="box user">
             <div>User ID: </div>
        <input type="text" name="txtUserId" id="txtUserId" class="userId__placeholder" required></input>
             <span id="userError"></span>
         </div>
 
-        <div class="mt-10 password">
+        <div class="box password">
             <div>Password: </div>
        <input type="text" name="txtPassword" id="txtPassword" class="password__placeholder" required></input>
             <span id="passwordError"></span>
         </div>
 
-        <div class="mt-10 name">
+        <div class="box name">
             <div>Name: </div>
        <input type="text" name="txtName" id="txtName" class="name__placeholder" required></input>
             <span id="nameError"></span>
         </div>
 
-        <div class="mt-10 address">
+        <div class="box address">
             <div>Address: </div>
        <input type="text" name="txtAddress" id="txtAddress" class="address__placeholder"></input>
             <span id="addressError"></span>
         </div>
 
-        <div class="mt-10 country">
+        <div class="box country">
             <div>Contry: </div>
             <input list="contries" name="contry" id="contry" class="contry__placeholder" required>
             
@@ -46,37 +46,37 @@
              <span id="contryError"></span>
         </div>
 
-        <div class="mt-10 zipcode">
+        <div class="box zipcode">
             <div>ZipCode: </div>
        <input type="text" name="nmbZipCode" id="nmbZipCode" class="zipCode__placeholder" required></input>
             <span id="zipCodeError"></span>
         </div>
 
-        <div class="mt-10 email">
+        <div class="box email">
             <div>Email: </div>
        <input type="text" name="txtEmail" id="txtEmail" class="email__placeholder" required></input>
             <!-- <input type="Email" name="Email" id="Email" class="email__placeholder"></input> -->
             <span id="emailError"></span>
         </div>
-        <div class="mt-10 sex">
+        <div class="box sex">
             <div>Sex: </div>
             <input type="radio" name="gender" id="male" required>Male</input>
             <input type="radio" name="gender" id="female" required >Female</input>
             <span id="sexError"></span>
         </div>
-        <div class="mt-10 language">
+        <div class="box language">
             <div>Language: </div>
        <input type="checkbox" name="check" id="english" onclick="onlyOne(this)">English</input>
             <input type="checkbox" name="check" id="nonEnglish" onclick="onlyOne(this)" >Non English</input>
             <span id="languageError"></span>
         </div>
-        <div class="mt-10 about">
+        <div class="box about">
             <div>About: </div>
        <input type="text" name="txtAbout" id="txtAbout" class="about__placeholder"></input>
             <span id="aboutError"></span>
         </div>
         <button type="submit" id="btnCheck">submit</button>
 
-        <script src="/js/script.js"></script>
+        <script src="./js/script.js"></script>
 </body>
 </html>
